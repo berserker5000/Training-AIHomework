@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  ping:
+    build: ./PingService/
+    ports:
+      - "5000:5000"
+
+  receiver:
+    build: ./ReceiverService/
+    ports:
+      - "8080:8080"
